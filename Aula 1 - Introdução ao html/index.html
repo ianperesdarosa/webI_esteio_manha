@@ -11,11 +11,17 @@
       name="description"
       content="Um website de exemplo sobre criação de sites em HTML e CSS, com uso de JS"
     />
+    <link rel="stylesheet" href="estilo.css">
+    <style>
+      p{
+        color: #25ff66;
+      }
+    </style>
   </head>
   <body>
-    <h1>HTML, CSS e JS - Aprenda a criar seu próprio website</h1>
-    <h2>O que é o HTML?</h2>
-    <p>
+    <h1 id="titulo">HTML, CSS e JS - Aprenda a criar seu próprio website</h1>
+    <h2 class="titulos">O que é o HTML?</h2>
+    <p id="especial" class="amarelo">
       HTML significa <span translate="no">"HyperText Markup Language"</span>, que em português é "Linguagem
       de Marcação de Hipertexto". É uma linguagem de marcação utilizada para
       criar a estrutura e o conteúdo de páginas da web. HTML é a base
@@ -23,7 +29,7 @@
       os desenvolvedores estruturem o conteúdo de maneira hierárquica e definam
       elementos como texto, imagens, links, formulários e outros tipos de mídia.
     </p>
-    <p>
+    <p style="color: blue;">
       A linguagem utiliza uma sintaxe composta por "tags" (etiquetas) que são
       inseridas no código-fonte do documento <abbr title="HyperText Markup Language">HTML</abbr> para indicar como o conteúdo
       deve ser formatado e exibido no navegador. Cada tag é composta por uma
@@ -51,8 +57,8 @@
       fornecendo a estrutura e os elementos necessários para criar documentos
       que podem ser visualizados em navegadores da web.
     </p>
-    <h2>Principais tags HTML</h2>
-    <h3>Tags de texto</h3>
+    <h2 class="titulos">Principais tags HTML</h2>
+    <h3 class="titulos">Tags de texto</h3>
     <p>
         <code>&lt;p&gt;</code> - Representa um parágrafo
     </p>

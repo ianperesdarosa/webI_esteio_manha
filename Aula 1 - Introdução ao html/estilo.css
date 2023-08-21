@@ -1,0 +1,36 @@
+p{
+    /* color: #f40009 !important; */
+    color: #f40009;
+}
+
+/* Identificadores */
+#titulo{
+    color: blueviolet;
+}
+
+#especial{
+    color: skyblue;
+}
+
+.titulos{
+    font-size: 64px;
+}
+
+h3.titulos{
+    color: pink;
+}
+
+.amarelo{
+    color: yellow;
+    font-size: 22px;
+}
+
+/* Hierarquia */
+p>span{
+    font-size: 26px;
+    color: olive;
+}
+
+h3+p{
+    color: orange;
+}
