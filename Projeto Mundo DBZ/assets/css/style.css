@@ -17,7 +17,7 @@ body > header:nth-child(1) {
   background-color: #e55e2e;
   display: flex;
   align-items: center;
-  padding: 0.56rem 0.88rem;
+  padding: 1rem;
 }
 
 body > header:nth-child(1) > div {
@@ -28,20 +28,21 @@ body > header:nth-child(1) > div {
 }
 
 body > header:nth-child(1) > div > img {
-  width: 1.09375rem;
-  height: 1.25rem;
-  margin-right: 0.65rem;
+  width: 1.5rem;
+  margin-right: 0.5rem;
 }
 
 body > header:nth-child(1) span {
   font-family: "Saiyan", sans-serif;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   color: #ffffff;
 }
 
 body > nav {
   background-color: #fda402;
-  padding: 0.44rem 0.65rem;
+  padding: 0.5rem;
+  color: #ffffff;
+  font-size: 0.75rem;
 }
 
 body > nav > a {
@@ -50,17 +51,12 @@ body > nav > a {
   text-decoration: none;
 }
 
-body > nav > span {
-  color: #ffffff;
-  font-size: 0.75rem;
-}
-
 body > nav > span:nth-child(3) {
   text-decoration: underline;
 }
 
 body > nav + article {
-  height: 8.5625rem;
+  height: 9rem;
   background-image: url("../imagens/historia.jpg");
   background-size: cover;
   background-position: center;
@@ -76,5 +72,5 @@ body > nav + article > header {
   background-color: #ac0117cc;
   color: #ffffff;
   text-align: center;
-  font-size: 1.125rem;
+  font-size: 1.25rem;
 }
