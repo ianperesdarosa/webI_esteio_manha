@@ -19,10 +19,16 @@ p {
   margin: 0.5rem 0;
 }
 
+<<<<<<< HEAD
 h2 {
   color: #7fcb07;
   font-size: 1rem;
   text-align: center;
+=======
+h2{
+  color: #7FCB07;
+  font-size: 1rem;
+>>>>>>> 1316dac7e6dd59034542b79046c14465e3b9985f
 }
 
 .card {
