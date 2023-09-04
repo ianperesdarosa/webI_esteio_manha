@@ -1,0 +1,13 @@
+@import url("style.css");
+
+body > nav + article {
+  background-image: url("../imagens/galeria.jpg");
+}
+
+body > main > section.card {
+  display: flex;
+}
+
+body > main > section.card > img {
+  margin-right: 1.25rem;
+}

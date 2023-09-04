@@ -13,6 +13,24 @@
   font-family: "Raleway", sans-serif;
 }
 
+p {
+  font-size: 0.75rem;
+  text-align: justify;
+  margin: 0.5rem 0;
+}
+
+h2{
+  color: #7FCB07;
+  font-size: 1rem;
+}
+
+.card {
+  padding: 0.5rem;
+  margin: 0.75rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+}
+
 body > header:nth-child(1) {
   background-color: #e55e2e;
   display: flex;
@@ -57,7 +75,6 @@ body > nav > span:nth-child(3) {
 
 body > nav + article {
   height: 9rem;
-  background-image: url("../imagens/historia.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -73,4 +90,14 @@ body > nav + article > header {
   color: #ffffff;
   text-align: center;
   font-size: 1.25rem;
+}
+
+footer {
+  background-color: #e55e2e;
+  padding: 0.5rem;
+}
+
+footer > p {
+  color: #ffffff;
+  text-align: center;
 }
