@@ -19,7 +19,7 @@ body > header:nth-child(1) {
   padding: 1rem;
 }
 
-body > header:nth-child(1) > div {
+body > header:nth-child(1) > div:nth-child(2) {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -80,12 +80,83 @@ main {
 #card_one {
   background-image: url("../imagens/historia.jpg");
 }
-#card_two{
-    background-image: url("../imagens/akira.jpg");
+#card_two {
+  background-image: url("../imagens/akira.jpg");
 }
-#card_three{
-    background-image: url("../imagens/galeria.jpg");
+#card_three {
+  background-image: url("../imagens/galeria.jpg");
 }
-#card_four{
-    background-image: url("../imagens/pedidos.jpg");
+#card_four {
+  background-image: url("../imagens/pedidos.jpg");
+}
+
+body > nav > a,
+ul > li > a {
+  color: #ffffff;
+  font-size: 0.75rem;
+  text-decoration: none;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul > li {
+  margin-right: 0.5rem;
+}
+
+.mobile {
+  display: block !important;
+}
+
+.desktop {
+  display: none !important;
+}
+
+@media screen and (min-width: 996px) {
+  html {
+    font-size: 20px;
+  }
+  .mobile {
+    display: none !important;
+  }
+  .desktop {
+    display: block !important;
+  }
+
+  html {
+    font-size: 20px;
+  }
+  .mobile {
+    display: none !important;
+  }
+  .desktop {
+    display: block !important;
+  }
+
+  body > header:nth-child(1) {
+    justify-content: space-between;
+  }
+
+  body > header:nth-child(1) > div:nth-child(2) {
+    width: auto;
+  }
+  
+  main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 18rem;
+    row-gap: 3rem;
+  }
+
+  .card {
+    height: 25rem;
+  }
+
+  footer{
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+  }
 }

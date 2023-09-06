@@ -10,4 +10,12 @@ body > main > section.card {
 
 body > main > section.card > img {
   margin-right: 1.25rem;
+  height: 8rem;
+}
+
+@media screen and (min-width: 996px) {
+  main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

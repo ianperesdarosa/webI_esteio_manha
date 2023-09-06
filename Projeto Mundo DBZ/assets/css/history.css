@@ -1,0 +1,8 @@
+@import url("style.css");
+
+body > nav + article {
+  background-image: url("../imagens/historia.jpg");
+}
+p {
+  text-indent: 0.5rem;
+}

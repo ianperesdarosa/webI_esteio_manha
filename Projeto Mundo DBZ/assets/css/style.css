@@ -13,6 +13,10 @@
   font-family: "Raleway", sans-serif;
 }
 
+html {
+  font-size: 24px;
+}
+
 p {
   font-size: 0.75rem;
   text-align: justify;
@@ -38,14 +42,14 @@ body > header:nth-child(1) {
   padding: 1rem;
 }
 
-body > header:nth-child(1) > div {
+body > header:nth-child(1) > div:nth-child(2) {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-body > header:nth-child(1) > div > img {
+body > header:nth-child(1) > div:nth-child(2) > img {
   width: 1.5rem;
   margin-right: 0.5rem;
 }
@@ -63,10 +67,20 @@ body > nav {
   font-size: 0.75rem;
 }
 
-body > nav > a {
+body > nav > a,
+ul > li > a {
   color: #ffffff;
   font-size: 0.75rem;
   text-decoration: none;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul > li {
+  margin-right: 0.5rem;
 }
 
 body > nav > span:nth-child(3) {
@@ -90,6 +104,7 @@ body > nav + article > header {
   color: #ffffff;
   text-align: center;
   font-size: 1.25rem;
+  padding: 0.5rem;
 }
 
 footer {
@@ -100,4 +115,33 @@ footer {
 footer > p {
   color: #ffffff;
   text-align: center;
+}
+
+.mobile {
+  display: block !important;
+}
+
+.desktop {
+  display: none !important;
+}
+
+/* Para telas grandes */
+@media screen and (min-width: 996px) {
+  html {
+    font-size: 20px;
+  }
+  .mobile {
+    display: none !important;
+  }
+  .desktop {
+    display: block !important;
+  }
+
+  body > header:nth-child(1) {
+    justify-content: space-between;
+  }
+
+  body > header:nth-child(1) > div:nth-child(2) {
+    width: auto;
+  }
 }

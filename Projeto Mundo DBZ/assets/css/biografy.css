@@ -16,3 +16,20 @@ body > main > article:nth-child(2) > p {
 h2 {
   text-align: center;
 }
+
+/* Para telas grandes */
+@media screen and (min-width:996px){
+  main{
+    display: flex;
+  }
+
+  body > main > article.card:nth-child(2){
+    width: 43.75rem;
+  }
+
+  footer{
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+  }
+}
