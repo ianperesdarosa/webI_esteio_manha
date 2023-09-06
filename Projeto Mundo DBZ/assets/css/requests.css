@@ -1,0 +1,29 @@
+@import url("style.css");
+
+/* CSS específico da página */
+h2 {
+  margin-bottom: 0.5rem;
+}
+
+body > nav + article {
+  background-image: url("../imagens/pedidos.jpg");
+}
+
+.card {
+  display: flex;
+}
+
+.card > img {
+  width: 5rem;
+  height: 2.8rem;
+  margin-right: 2rem;
+}
+
+.card ul {
+  list-style-image: url("../imagens/esfera_do_dragao.png");
+  list-style-position: inside;
+}
+
+.card ul > li {
+  font-size: 0.75rem;
+}
