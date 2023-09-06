@@ -1,4 +1,3 @@
-/* Generic */
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
 
 @font-face {
@@ -11,24 +10,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Raleway", sans-serif;
-}
-
-p {
-  font-size: 0.75rem;
-  text-align: justify;
-  margin: 0.5rem 0;
-}
-
-h2 {
-  color: #7fcb07;
-  font-size: 1rem;
-}
-
-.card {
-  padding: 0.5rem;
-  margin: 0.75rem;
-  border-radius: 0.5rem;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
 }
 
 body > header:nth-child(1) {
@@ -56,42 +37,6 @@ body > header:nth-child(1) span {
   color: #ffffff;
 }
 
-body > nav {
-  background-color: #fda402;
-  padding: 0.5rem;
-  color: #ffffff;
-  font-size: 0.75rem;
-}
-
-body > nav > a {
-  color: #ffffff;
-  font-size: 0.75rem;
-  text-decoration: none;
-}
-
-body > nav > span:nth-child(3) {
-  text-decoration: underline;
-}
-
-body > nav + article {
-  height: 9rem;
-  background-size: cover;
-  background-position: center;
-}
-
-body > nav + article {
-  display: flex;
-  align-items: end;
-}
-
-body > nav + article > header {
-  width: 100%;
-  background-color: #ac0117cc;
-  color: #ffffff;
-  text-align: center;
-  font-size: 1.25rem;
-}
-
 footer {
   background-color: #e55e2e;
   padding: 0.5rem;
@@ -100,4 +45,47 @@ footer {
 footer > p {
   color: #ffffff;
   text-align: center;
+}
+
+main {
+  margin: 0.5rem 2rem;
+}
+
+.card {
+  height: 12rem;
+  border: 3px solid #ac0117;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: end;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 0.5rem;
+}
+
+.card > article {
+  background-color: #ac0117cc;
+  width: 100%;
+  display: block;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.card > article > a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+#card_one {
+  background-image: url("../imagens/historia.jpg");
+}
+#card_two{
+    background-image: url("../imagens/akira.jpg");
+}
+#card_three{
+    background-image: url("../imagens/galeria.jpg");
+}
+#card_four{
+    background-image: url("../imagens/pedidos.jpg");
 }
