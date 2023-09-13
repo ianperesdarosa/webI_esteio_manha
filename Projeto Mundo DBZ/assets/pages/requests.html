@@ -9,9 +9,18 @@
   <body>
     <header>
       <div class="mobile">
-        <a href="#">
-          <img src="../imagens/menu.png" alt="Logo do site" />
-        </a>
+        <button class="openbtn" onclick="openNav()">
+          <img src="/Projeto Mundo DBZ/assets/imagens/menu.png" alt="Menu do site" />
+        </button>
+
+        <div id="mySidepanel" class="sidepanel">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+          <a href="/Projeto Mundo DBZ/index.html">Página inicial</a>
+          <a href="history.html">História do Anime</a>
+          <a href="biografy.html">Biografia do Autor</a>
+          <a href="characters.html">Personagens</a>
+          <a href="requests.html">Pedidos</a>
+        </div>
       </div>
       <div>
         <img src="../imagens/logo.png" alt="Logo do anime Dragon Ball" />
@@ -126,3 +135,13 @@
     </footer>
   </body>
 </html>
+<script>
+  function openNav() {
+    document.getElementById("mySidepanel").style.width = "250px";
+    document.getElementById("mySidepanel").style.display = "block";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidepanel").style.width = "0";
+  }
+</script>

@@ -1,5 +1,47 @@
 @import url("style.css");
 
+.sidepanel  {
+  display: none;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #e55e2e;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidepanel a:hover {
+  color: #111;
+}
+
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #e55e2e;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
 body > article {
   background-image: url("../imagens/akira.jpg");
 }
@@ -17,6 +59,14 @@ h2 {
   text-align: center;
 }
 
+.mobile {
+  display: block !important;
+}
+
+.desktop {
+  display: none !important;
+}
+
 /* Para telas grandes */
 @media screen and (min-width:996px){
   main{
@@ -26,7 +76,12 @@ h2 {
   body > main > article.card:nth-child(2){
     width: 43.75rem;
   }
-
+  .mobile {
+    display: none !important;
+  }
+  .desktop {
+    display: block !important;
+  }
   footer{
     position: fixed;
     bottom: 0;
